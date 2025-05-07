@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma Boutique en Ligne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    main {
+      padding: 10px;
+    }
+    .produit {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      width: 220px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+    }
+    .produit img {
+      max-width: 100%;
+      height: auto;
+    }
+    .ajouter-panier {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .ajouter-panier:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ma Boutique en Ligne</h1>
+  </header>
+
+  <main>
+    <div class="produit">
+      <img src="https://via.placeholder.com/150" alt="Produit 1">
+      <h2>Produit 1</h2>
+      <p>Description du produit 1.</p>
+      <p>Prix : 10&nbsp;&euro;</p>
+      <button class="ajouter-panier" onclick="ajouterAuPanier('Produit 1')">Ajouter au panier</button>
+    </div>
+    <div class="produit">
+      <img src="https://via.placeholder.com/150" alt="Produit 2">
+      <h2>Produit 2</h2>
+      <p>Description du produit 2.</p>
+      <p>Prix : 20&nbsp;&euro;</p>
+      <button class="ajouter-panier" onclick="ajouterAuPanier('Produit 2')">Ajouter au panier</button>
+    </div>
+    <div class="produit">
+      <img src="https://via.placeholder.com/150" alt="Produit 3">
+      <h2>Produit 3</h2>
+      <p>Description du produit 3.</p>
+      <p>Prix : 15&nbsp;&euro;</p>
+      <button class="ajouter-panier" onclick="ajouterAuPanier('Produit 3')">Ajouter au panier</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Ma Boutique. Tous droits réservés.
+  </footer>
+
+  <script>
+    function ajouterAuPanier(nomProduit) {
+      alert(nomProduit + " a été ajouté au panier.");
+    }
+  </script>
+</body>
+</html>
